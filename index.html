@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animated Image on Bird Image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ff9e49;
+            margin: 0;
+            position: relative; /* Add relative positioning for absolute children */
+        }
+        .animated-image {
+            width: 1800px;
+            height: 900px; 
+            animation: move 3s infinite alternate;
+        }
+        .bird-image {
+            cursor: pointer;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            width: 900px;
+            height: 650px;
+            z-index: 1; /* Ensure the bird image appears on top */
+        }
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="page2.html">
+        <img src="bird.jpg" alt="A bird" class="bird-image">
+    </a >
+    <img src="cloud2.jpg" alt="Animated cloud" class="animated-image">
+</body>
+</html>

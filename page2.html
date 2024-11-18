@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #47c2ce;
+            position: relative; 
+        }
+        .container {
+            position: relative;
+        }
+        img {
+            width: 1100px;
+            height: auto;
+            margin: 10px;
+        }
+        .boom-image {
+            position: absolute; 
+            top: 0; 
+            left: 0;
+            width: 500px;
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="page3.html"> <!-- 点击gift.gif将跳转到page3.html -->
+            <img src="gift.gif" alt="Gift Image" style="cursor: pointer;">
+        </a >
+        <img src="boom.gif" alt="Boom Image" class="boom-image">
+    </div>
+</body>
+</html>

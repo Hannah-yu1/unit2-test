@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 5</title>
+    <style>
+        body {
+            background-color: #47c2ce;
+            position: relative; 
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-container {
+            position: relative;
+        }
+        img {
+            width: 100%; 
+            max-width: 800px;
+            cursor: pointer;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 800px; 
+            height: 600px;
+            z-index: 1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-container">
+        <a href="page6.html">
+            <img class="overlay" src="cake.jpg" alt="Image on Page 5">
+        </a>
+        <img src="apple cake.gif" alt="Animated GIF on Page 5">
+    </div>
+</body>
+</html>
